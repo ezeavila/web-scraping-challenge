@@ -33,7 +33,6 @@ def scrape():
         ftimage_url = image_sp.find('div',class_='carousel_container').article.footer.a['data-fancybox-href']
         image_link = "https:"+image_sp .find('div', class_='jpl_logo').a['href'].rstrip('/')
         feature_url = image_link+ftimage_url
-        featured_image_url = image_sp.find('h1', class_="media_feature_title").text.strip()
 
         mars_facts_url = 'https://space-facts.com/mars/'
         browser.visit(mars_facts_url) 
