@@ -19,7 +19,7 @@
       <div class="row no-gutter">
         <div class="card-body">
           <h5 class="card-title" id="font">Latest Mars News</h5>
-          <h6 class="card-subtitle mb-2 " id="font">{{mars.news_header}}</h6>
+          <h6 class="card-subtitle mb-2 " id="font">{{mars.news_header }}</h6>
           <p class="card-text">{{mars.teaser}}</p>
           <a href={{ mars.news_url }} target="_blank">Check All News</a>
         </div>
@@ -31,7 +31,7 @@
             <div class="card-body" id="img-table">
               <h5 class="card-title">Featured Mars Image</h5>
               <img class="card-img-bottom" src="{{ mars.featured_pic}}" alt="Featured Mars Image">
-              <a href={{ mars.jpl_url }} target="_blank">Check All Images</a>
+              <a href={{ mars.images_url }} target="_blank">Check All Images</a>
             </div>
           </div>
         </div>
@@ -53,10 +53,10 @@
   <div class ="row" id="mars-hemispheres">
     <div class = "col-md-12">
         <h3><center>Mars Hemispheres</center></h3>
-        {% for hemisphere in mars.hemisphere_urls %}
+        {% for hemisphere in mars.images_url' %}
             <div class = "col-md-6">
                 <div class = "thumbnail">
-                    <img src = "{{hemisphere_image_urls}}">
+                    <img src = "{{hemisphere_url}}">
                         <h3>{{hemisphere.title}}</h3>
                     </div>
                 </div>
