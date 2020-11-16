@@ -18,8 +18,6 @@ def scrape():
 	scrape_mars.scrape()
 	return redirect('/', code = 302)
 
- 
-
 
 if __name__ == "__main__":
     app.run(debug=True)

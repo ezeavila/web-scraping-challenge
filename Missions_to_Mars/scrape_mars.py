@@ -4,6 +4,7 @@ from splinter import Browser
 import os
 import pandas as pd
 import time
+import pymongo
 
 client = pymongo.MongoClient('mongodb://localhost:27017')
 db = client.mars_db
