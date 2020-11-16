@@ -80,7 +80,7 @@ def scrape():
                 'mars_facts_url': mars_facts_url,
                 'hemisphere_url': mars_hem_url,
                 }
-        all_collection.insert(mars_data)
+        all_collection.insert(all_mars_data)
 
 
 
